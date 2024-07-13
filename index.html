@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/image 1.ico" type="image/x-icon">
+    <script defer type="module" src="script/script.js"></script>
+    <script defer src="script/requisicoes.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>AluraGeek</title>
+</head>
+<body>
+
+    <header class="encabezado">
+        <img class="logo" src="img/logo.svg" alt="Logo Alura Geek">
+    </header>
+
+    <main class="container">
+        <section class="productos mt-5">
+            <h1>Mis productos:</h1>
+            <div class="container-productos">
+                <div class="card-producto">
+                    <img src="img/producto.png" alt="" class="card-producto__img-producto">
+                    <div class="card-producto__legenda">
+                        <p class="card-producto__nombre-producto">Taza de StarWars</p>
+                        <span class="card-producto__detalles">
+                            <span class="card-producto__precio">
+                                <span>$</span>
+                                <p class="card-producto__precio-producto">$60.00</p>
+                            </span>
+                            <img src="img/icon _trash.png" alt="icono de papelera" class="card-producto__icono-papelera">
+                        </span>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <img src="img/gameboy.png" alt="" class="card-producto__img-producto">
+                    <div class="card-producto__legenda">
+                        <p class="card-producto__nombre-producto">Gameboy</p>
+                        <span class="card-producto__detalles">
+                            <span class="card-producto__precio">
+                                <span>$</span>
+                                <p class="card-producto__precio-producto">$60.00</p>
+                            </span>
+                            <img src="img/icon _trash.png" alt="icono de papelera" class="card-producto__icono-papelera">
+                        </span>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <img src="img/producto.png" alt="" class="card-producto__img-producto">
+                    <div class="card-producto__legenda">
+                        <p class="card-producto__nombre-producto">Taza de StarWars</p>
+                        <span class="card-producto__detalles">
+                            <span class="card-producto__precio">
+                                <span>$</span>
+                                <p class="card-producto__precio-producto">$60.00</p>
+                            </span>
+                            <img src="img/icon _trash.png" alt="icono de papelera" class="card-producto__icono-papelera">
+                        </span>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <img src="img/producto.png" alt="" class="card-producto__img-producto">
+                    <div class="card-producto__legenda">
+                        <p class="card-producto__nombre-producto">Taza de StarWars</p>
+                        <span class="card-producto__detalles">
+                            <span class="card-producto__precio">
+                                <span>$</span>
+                                <p class="card-producto__precio-producto">$60.00</p>
+                            </span>
+                            <img src="img/icon _trash.png" alt="icono de papelera" class="card-producto__icono-papelera">
+                        </span>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <img src="img/gameboy.png" alt="" class="card-producto__img-producto">
+                    <div class="card-producto__legenda">
+                        <p class="card-producto__nombre-producto">Gameboy</p>
+                        <span class="card-producto__detalles">
+                            <span class="card-producto__precio">
+                                <span>$</span>
+                                <p class="card-producto__precio-producto">$60.00</p>
+                            </span>
+                            <img src="img/icon _trash.png" alt="icono de papelera" class="card-producto__icono-papelera">
+                        </span>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <img src="img/producto.png" alt="" class="card-producto__img-producto">
+                    <div class="card-producto__legenda">
+                        <p class="card-producto__nombre-producto">Taza de StarWars</p>
+                        <span class="card-producto__detalles">
+                            <span class="card-producto__precio">
+                                <span>$</span>
+                                <p class="card-producto__precio-producto">$60.00</p>
+                            </span>
+                            <img src="img/icon _trash.png" alt="icono de papelera" class="card-producto__icono-papelera">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="add-producto">
+            <h1>Agregar producto:</h1>
+            <form action="" class="add-producto__container-form" data-formulario>
+                <fieldset>
+                    <input class="input" type="text" id="nombre" placeholder="Nombre..." required minlength="3">
+                    <label for="nombre"></label>
+                    <span class="erro"></span>
+                </fieldset>
+                <fieldset>
+                    <input class="input" type="number" id="precio" placeholder="Precio..." required>
+                    <label for="precio"></label>
+                    <span class="erro"></span>
+                </fieldset>
+                <fieldset>
+                    <input class="input" type="text" id="imagem" placeholder="Url de la imagen..." required>
+                    <label for="img"></label>
+                    <span class="erro"></span>
+                </fieldset>
+                <span class="add-producto__container-form__botoes">
+                    <button class="add-producto__container-form__btn-guardar">Guardar</button>
+                    <button type="button" class="add-producto__container-form__limpiar">Limpiar</button>
+                </span>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="logo" src="img/logo.svg" alt="Logo Alura Geek">
+        <p class="ib">Desarrollado por Guadalupe Alonso Contreras</p>
+        <p>2024</p>
+    </footer>
+
+</body>
+</html>

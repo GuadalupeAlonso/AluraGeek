@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+
+:root {
+    --cor-primaria: #5D04D9;
+    --cor-secundaria: #03318C;
+    --cor-fonte-clara: white;
+    --font-family-primaria: "Press Start 2P", system-ui;
+    --font-family-secundaria: "IBM Plex Mono", monospace;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado {
+    background-color: var(--cor-primaria);
+    /* width: 100%;
+    padding: 1em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    padding: 0.8em;
+    width: 20em;
+}
+
+
+.productos > h1,  .add-producto > h1{
+    font-family: var(--font-family-primaria);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+}
+
+.container-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1em;
+}
+
+.container-productos .card-producto {
+    flex-basis: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+}
+
+.card-producto {
+    background-color: var(--cor-primaria);
+    border-radius: 12px;
+    color: var(--cor-fonte-clara);
+    font-family: var(--font-family-secundaria);
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.2em solid black;
+    padding: 1em;
+}
+
+.card-producto__img-producto {
+    height: 150px;
+    width: 150px;
+    align-self: center;
+}
+
+.card-producto__legenda {
+    padding: 0.6em;
+    font-size: 1.4rem;
+}
+
+.card-producto__detalles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.card-producto__precio {
+    display: flex;
+    gap: 1em;
+}
+
+.card-producto__icono-papelera {
+    height: 100%;
+    cursor: pointer;
+}
+
+.add-producto {
+    flex-basis: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-producto__container-form {
+    font-family: var(--font-family-secundaria);
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input {
+    width: 100%;
+    border: 0.2em solid var(--cor-secundaria);
+    border-radius: 33px;
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+.input::placeholder {
+    color: var(--cor-secundaria);
+}
+
+.add-producto__container-form__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-producto__container-form__btn-guardar,
+.add-producto__container-form__limpiar {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fonte-clara);
+    border-radius: 12px;
+    padding: 0.5em 2em;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-fonte-clara);
+    font-family: var(--font-family-secundaria);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.ib {
+    font-weight: 300;
+}
+
+@media (max-width: 800px) {
+    .card-producto {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-producto {
+        flex-basis: calc(100% - 20px);
+        margin-right: 0;
+    }
+
+    .container-productos {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+    }
+}
